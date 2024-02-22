@@ -1,0 +1,59 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Starbucks website LANDING PAGE</title>
+    <link rel="stylesheet" href="landingpage.css">
+    <script src="https://kit.fontawesome.com/1eb35271bd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <section>
+    <div class="circle"></div>
+    <header>
+        <img src="starbucks.WEBP" width="150" height="150">
+        <ul>
+            <li><a href="#"><b>Home</b></a></li>
+            <li><a href="#"><b>Menu</b></a></li>
+            <li><a href="#"><b>What's new</b></a></li>
+            <li><a href="#"><b>Contact Us</b></a></li>
+            <li><a href="#" class="sign-in"><b>Sign in </b></a></li>
+        </ul>
+    </header>
+    </div>
+    <div class="content">
+        <div class="textbox">
+            <h1>It's not just coffee<br> It's <span>Starbucks</span></h1>
+            <p><b>Our story begins in 1971 along the cobblestone streets of Seattle’s historic Pike Place Market. It was here where Starbucks opened its first store, offering fresh-roasted coffee beans, tea and spices from around the world for our customers to take home. Our name was inspired by the classic tale, “Moby-Dick,” evoking the seafaring tradition of the early coffee traders.
+            Ten years later, a young New Yorker named Howard Schultz would walk through these doors and become captivated with Starbucks coffee from his first sip.</b></p>
+            <br><a href="#" >Discover</a>
+        </div>
+        <div class="imgbox">
+            <img src="img.PNG"  class="starbucks">
+        </div>
+    </div>
+    <ul class="thumb">
+        <li><img src="img.png" onclick="imgSlider('img.png'); changeCircleColor('#017143')"></li>
+        <li><img src="img2.png" onclick="imgSlider('img2.png');changeCircleColor('#eb7495')"></li>
+        <li><img src="img3.png" onclick="imgSlider('img3.png');changeCircleColor('#d752b1')"></li>
+        <li><img src="img4.png" onclick="imgSlider('img4.png');changeCircleColor('#017143')"></li>
+    </ul>
+    <ul class="sci">
+        <li><a href=""><i class="fa-brands fa-facebook"></i></li>
+        <li><a href=""><i class="fa-brands fa-instagram"></i></li>
+        <li><a href=""><i class="fa-brands fa-twitter"></i></li>
+    </ul>
+   
+</section>
+<script type="text/javascript">
+    function imgSlider(anything){
+        document.querySelector('.starbucks').src=anything;
+    }
+    
+    function changeCircleColor(color){
+        const circle=document.querySelector('.circle');
+        circle.style.background=color;
+    }
+
+</script>
+
+</body>
+</html>
